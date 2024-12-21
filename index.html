@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Apostamos?</title>
+    <link rel="icon" href="img.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+        background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+        background-position: center;  /* Centra la imagen de fondo */
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+</style>
+<body>
+    <div class="game-container">
+        <h1>chucha me aburri</h1>
+        <div class="choices" style="display:none;">
+            <button onclick="jugar('piedra')">🪨 Piedra</button>
+            <button onclick="jugar('papel')">📄 Papel</button>
+            <button onclick="jugar('tijera')">✂️ Tijera</button>
+        </div>
+        <div id="result"></div>
+        <div id="machine-choice"></div>
+        <div id="score">
+            <p>Ganadas: <span id="wins">0</span></p>
+            <p>Perdidas: <span id="losses">0</span></p>
+            <p>Empates: <span id="draws">0</span></p>  <!-- Mostrar el contador de empates -->
+        </div>
+        <div id="options" style="display:none;">
+            <button onclick="continuar()">¿otra vez?</button>
+            <button onclick="salir()">Ya no</button>
+        </div>
+        <div id="image" style="display:none;">
+            <video width="320" height="240" controls>
+                <source src="Feliz navidad (1).mp4" type="video/mp4">
+                Tu eres pobre no tiene ipone.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

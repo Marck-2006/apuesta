@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #a74a2e;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c97e79;
+}
+
+#result {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#score p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+#options button {
+    background-color: #2cf312;
+}
+
+#options button:hover {
+    background-color: #73b61b;
+}
+
+#image video {
+    max-width: 100%;  /* Asegura que el video no se salga del contenedor */
+    height: auto;  /* Ajusta la altura para mantener la proporción del video */
+    border-radius: 8px;  /* Bordes redondeados para el video */
+}
